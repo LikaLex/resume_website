@@ -15,6 +15,18 @@
     <a href= "#" >CONTACT</a>
 </div>
 
+<div class="content">
+    <div class = "home">
+        <h1>Liubov Onufriyuk</h1>
+        <h3>Ruby on Rails Developer</h3>
+    </div>
+
+    <div class="about">
+        
+    </div>
+
+</div>
+
 <div class="prof-box">
     <img src="images/profile.jpg" class="prof-pic">
     <h1>Liubov Onufriyuk</h1>
@@ -33,6 +45,19 @@
     </ul>
 </div>
 
+<script type = "text/javascript" src = "js/jquery-3.2.1.min.js">  </script>
+<script type="text/javascript" >
+    $(document).ready(function () {
+        $('a').click(function () {
+            //alert("i am click");
+            var selected = $(this);
+            $('a').removeClass('active');
+            $(selected).addClass('active')
+            
+        })
+        
+    })
+</script>
 </body>
 </html>
 

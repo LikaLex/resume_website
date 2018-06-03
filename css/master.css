@@ -103,3 +103,35 @@ a.active,.nav a:hover{
     color: black;
     width: 100%;
 }
+
+
+.content{
+    position: absolute;
+    width: 900px;
+    min-height: 500px;
+    height: auto;
+    #background-color: red;
+    right: 0;
+    top: 10%;
+}
+
+.home{
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    color: white;
+    font-family: Verdana;
+}
+
+.home h1{
+    font-size: 85px;
+    padding-right: 90px;
+    border-bottom: 1px solid white;
+    text-transform: uppercase;
+}
+
+.home h3{
+    font-size: 28px;
+    padding: 5px 0;
+    opacity: 0.6;
+}
