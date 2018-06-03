@@ -13,6 +13,7 @@
     <a class="a active" href= "#" >HOME</a>
     <a class="b" href= "#" >ABOUT</a>
     <a class="c" href= "#" >PROFILES</a>
+    <a class="d" href= "#" >CONTACT ME</a>
 </div>
 
 <div class="content">
@@ -47,6 +48,19 @@
             <li><a href="https://twitter.com/Lyubov_Onufriyu" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
         </ul>
     </div>
+
+    <div class="contact">
+        <div class="contactform">
+            <form action="index.html" method="post">
+                <input type="text" name = "" class="inputtext" value="First Name">
+                <input type="text" name = "" class="inputtext" value="Last Name">
+                <input type="text" name = "" class="inputtext" value="Your Email">
+                <textarea cols="4" rows="6" class="inputmessage" > Your Message</textarea>
+                <input type="button" name="" class="submitbutton" value="Submit">
+
+            </form>
+        </div>
+    </div>
 </div>
 
 
@@ -64,13 +78,17 @@
         var $a = $('.a'),
             $b = $('.b'),
             $c = $('.c'),
+            $d = $('.d'),
             $home = $('.home'),
             $about = $('.about'),
-            $profile = $('.prof-box');
+            $profile = $('.prof-box'),
+            $contact = $('.contact');
+
         $a.click(function () {
             $home.fadeIn();
             $about.fadeOut();
             $profile.fadeOut();
+            $contact.fadeOut();
 
         });
 
@@ -78,17 +96,27 @@
             $about.fadeIn();
             $home.fadeOut();
             $profile.fadeOut();
+            $contact.fadeOut();
         });
 
         $c.click(function () {
             $profile.fadeIn();
             $home.fadeOut();
             $about.fadeOut();
+            $contact.fadeOut();
+        });
+
+        $d.click(function () {
+            $contact.fadeIn();
+            $home.fadeOut();
+            $about.fadeOut();
+            $profile.fadeOut();
         });
 
 
 
-        
+
+
     })
 </script>
 </body>

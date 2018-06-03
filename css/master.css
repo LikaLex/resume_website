@@ -141,16 +141,62 @@ a.active,.nav a:hover{
     position: absolute;
     right: 0;
     top: 0px;
-    color: black;
+    color: white;
     font-family: gothic;
     padding: 0 60px;
     display: none;
-    background-color: white;
+    background-color: rgba(0,0,0,0.7)
 }
 
 .about p{
     font-size: 18px;
     line-height: 28px;
     margin-bottom: 15px;
+
+}
+
+.contact{
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    padding: 0 60px;
+    display: none;
+}
+
+.inputtext{
+    width: 55%;
+    height: 65px;
+    border: 3px solid black;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    font-size: 20px;
+    padding: 0 10px;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.inputmessage{
+    width: 55%;
+    height: 135px;
+    border: 3px solid black;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    font-size: 20px;
+    padding: 0 10px;
+    float: left;
+}
+
+.submitbutton{
+    width: 160px;
+    height: 65px;
+    font-family: Arial;
+    background-color: white;
+    color: black;
+    font-size: 28px;
+    border: none;
+    font-weight: bold;
+    float: left;
+    clear: both;
+    margin-top: 25px;
 
 }
