@@ -141,10 +141,11 @@ a.active,.nav a:hover{
     position: absolute;
     right: 0;
     top: 0px;
-    color: white;
+    color: black;
     font-family: gothic;
     padding: 0 60px;
     display: none;
+    background-color: white;
 }
 
 .about p{
