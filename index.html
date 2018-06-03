@@ -11,39 +11,45 @@
 
 <div class="nav">
     <a class="a active" href= "#" >HOME</a>
-    <a href= "#" >ABOUT</a>
-    <a href= "#" >CONTACT</a>
+    <a class="b" href= "#" >ABOUT</a>
+    <a class="c" href= "#" >CONTACT</a>
 </div>
 
 <div class="content">
     <div class = "home">
-        <h1>Liubov Onufriyuk</h1>
+        <h1>Lyubov Onufriyuk</h1>
         <h3>Ruby on Rails Developer</h3>
     </div>
 
     <div class="about">
-        
+        <p>
+            Hello! My name is Lyubov.<br>
+            I am a 2nd year student of BSUIR, Faculty of Computer Systems and Networks, specialty Informatics.<br>
+            I want to start a career Junior Ruby Developer.<br>
+            My level of English: Intermediate
+        </p>
     </div>
 
+
+    <div class="prof-box">
+        <img src="images/profile.jpg" class="prof-pic">
+        <h1>Lubov Onufriyuk</h1>
+        <h5>Ruby on Rails Developer</h5>
+        <div class="line-break"> </div>
+        <p>
+            My passion is creating web applications
+        </p>
+        <ul>
+            <li><a href="#"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
 </div>
 
-<div class="prof-box">
-    <img src="images/profile.jpg" class="prof-pic">
-    <h1>Liubov Onufriyuk</h1>
-    <h5>Ruby on Rails Developer</h5>
-    <div class="line-break"> </div>
-    <p>
-        My passion is creating web applications
-    </p>
 
-    <ul>
-        <li><a href="#"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-    </ul>
-</div>
 
 <script type = "text/javascript" src = "js/jquery-3.2.1.min.js">  </script>
 <script type="text/javascript" >
@@ -54,7 +60,34 @@
             $('a').removeClass('active');
             $(selected).addClass('active')
             
-        })
+        });
+        var $a = $('.a'),
+            $b = $('.b'),
+            $c = $('.c'),
+            $home = $('.home'),
+            $about = $('.about'),
+            $profile = $('.prof-box');
+        $a.click(function () {
+            $home.fadeIn();
+            $about.fadeOut();
+            $profile.fadeOut();
+
+        });
+
+        $b.click(function () {
+            $about.fadeIn();
+            $home.fadeOut();
+            $profile.fadeOut();
+        });
+
+        $c.click(function () {
+            $profile.fadeIn();
+            $home.fadeOut();
+            $about.fadeOut();
+        });
+
+
+
         
     })
 </script>

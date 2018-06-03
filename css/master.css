@@ -13,10 +13,11 @@ html {
     height: 450px;
     background: rgba(0,0,0,0,4);
     padding: 40px;
-    color: aqua;
+    color: white;
     margin: 0 auto;
     margin-top: 100px;
     text-align: center;
+    display: none;
 }
 
 .prof-pic{
@@ -25,24 +26,24 @@ html {
     width: 200px;
 }
 
-h1{
+.prof-box h1{
     font-weight: 100;
     letter-spacing: 6;
     font-size: 40px;
 }
 
-p{
+.prof-box p{
     font-weight: 200;
     letter-spacing: 1;
 }
 
-.line-break{
+.prof-box .line-break{
     width: 325px;
     border-top: 1px solid white;
     margin: 0 auto;
 }
 
-ul{
+.prof-box ul{
     margin: 0;
     padding: 0;
 }
@@ -134,4 +135,21 @@ a.active,.nav a:hover{
     font-size: 28px;
     padding: 5px 0;
     opacity: 0.6;
+}
+
+.about{
+    position: absolute;
+    right: 0;
+    top: 0px;
+    color: white;
+    font-family: gothic;
+    padding: 0 60px;
+    display: none;
+}
+
+.about p{
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 15px;
+
 }
