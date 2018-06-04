@@ -156,6 +156,18 @@ a.active,.nav a:hover{
 
 }
 
+.about a{
+
+    color: darkkhaki;
+    text-decoration: none;
+
+
+}
+
+.about a:hover{
+    color: darkgreen;
+}
+
 .contact{
     position: absolute;
     right: 0;
@@ -190,6 +202,20 @@ a.active,.nav a:hover{
     background-color: rgba(0,0,0,0.7);
     color: white;
 }
+
+
+.contact a{
+
+    color: darkgreen;
+    text-decoration: none;
+
+
+}
+
+.contact a:hover{
+    color: orangered;
+}
+
 
 .inputtext{
     width: 55%;
