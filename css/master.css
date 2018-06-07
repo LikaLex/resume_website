@@ -73,7 +73,7 @@ html {
 
 
 .nav{
-    width: 350px;
+    width: 250px;
     height: auto;
     position: absolute;
     top: 20%;
@@ -109,7 +109,7 @@ a.active,.nav a:hover{
 
 .content{
     position: absolute;
-    width: 900px;
+    width: 800px;
     min-height: 500px;
     height: auto;
     #background-color: red;
